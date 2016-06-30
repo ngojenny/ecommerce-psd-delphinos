@@ -24,19 +24,19 @@ gulp.task('styles', () => {
 
 gulp.task('watch', () => {
 	gulp.watch('./dev/styles/**/*.scss', ['styles']);
-	gulp.watch('./dev/scripts/*.js', ['scripts']);
+	gulp.watch('./dev/js/*.js', ['scripts']);
 	gulp.watch('./public/*.html', reload);
 });
 
 gulp.task('scripts', () => {
-	gulp.src('./dev/scripts/main.js')
+	gulp.src('./dev/js/main.js')
 		.pipe(plumber({
 		  errorHandler: notify.onError("Error: <%= error.message %>")
 		}))
 		.pipe(babel({
 			presets: ['es2015']
 		}))
-		.pipe(gulp.dest('./public/scripts'))
+		.pipe(gulp.dest('./public/js'))
 		.pipe(reload({stream: true}));
 });
 
