@@ -1,0 +1,2 @@
+//compile things
+"use strict";

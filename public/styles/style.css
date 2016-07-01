@@ -127,3 +127,112 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 * {
   box-sizing: border-box; }
+
+/*COLOR VARIABLES*/
+/* FONT STACK */
+/* GENERAL LAYOUT */
+.wrapper {
+  width: 65%;
+  max-width: 900px;
+  margin: 0 auto; }
+
+.hide {
+  display: none; }
+
+/* GENERAL TYPOGRAPHY */
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 16px; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto Slab", serif; }
+
+h1,
+h2 {
+  text-transform: uppercase; }
+
+h1 {
+  letter-spacing: 8px;
+  font-size: 2.9rem; }
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out; }
+  a:hover {
+    color: #333333;
+    font-weight: bolder; }
+
+a,
+p {
+  color: #A1A1A1;
+  font-family: "Lato", sans-serif;
+  font-weight: 400; }
+
+/* OTHER GENERAL STYLES */
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+/* GENERAL NAVIGATION STYLES */
+nav a {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 1.1rem; }
+
+/* TOP NAV: USER ACTION NAVIGATION */
+.user-action {
+  border: 1px solid #F6F6F6; }
+
+.user-account-action li {
+  float: left; }
+
+.user-settings {
+  float: left; }
+  .user-settings li {
+    border-right: 1px solid #F6F6F6; }
+
+.user-purchase {
+  float: right; }
+  .user-purchase li {
+    border-left: 1px solid #F6F6F6; }
+
+/* MAIN NAV: MAIN NAVIGATION */
+.main-nav {
+  border-bottom: 1px solid #F6F6F6;
+  padding: 20px 0; }
+  .main-nav img {
+    float: left;
+    width: 15%;
+    margin-top: 10px; }
+  .main-nav a {
+    padding: 10px 20px; }
+  .main-nav li:nth-of-type(5) a {
+    padding-right: 0; }
+
+.main-nav-links {
+  float: right; }
+  .main-nav-links li {
+    float: left; }
+
+header {
+  padding: 250px 0;
+  background-image: url(../images/mainLP-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center; }
+  header p {
+    color: #46454A;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 2.3;
+    width: 350px;
+    margin: 20px auto 0; }

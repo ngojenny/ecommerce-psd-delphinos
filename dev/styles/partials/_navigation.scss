@@ -1,0 +1,58 @@
+/* GENERAL NAVIGATION STYLES */
+nav {
+	a {
+		display: inline-block;
+		padding: 10px 25px;
+		font-size: 1.1rem;
+	}
+} 
+
+/* TOP NAV: USER ACTION NAVIGATION */
+
+.user-action {
+	border: 1px solid $lightGrey;
+}
+
+.user-account-action {
+	li {
+		float: left;
+	}
+}
+.user-settings {
+	float: left;
+	li {
+		border-right: 1px solid $lightGrey;
+	}
+}
+
+.user-purchase {
+	float: right;
+	li {
+		border-left: 1px solid $lightGrey;
+	}
+}
+
+/* MAIN NAV: MAIN NAVIGATION */
+.main-nav {
+	border-bottom: 1px solid $lightGrey;
+	padding: 20px 0;
+	img {
+		float: left;
+		width: 15%;
+		margin-top: 10px;
+	}
+
+	a {
+		padding: 10px 20px;
+	}
+
+	li:nth-of-type(5) a {
+		padding-right: 0;
+	}
+}
+.main-nav-links {
+	float: right;
+	li {
+		float: left;
+	}
+}
