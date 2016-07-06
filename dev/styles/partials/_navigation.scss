@@ -1,9 +1,9 @@
 /* GENERAL NAVIGATION STYLES */
 nav {
 	a {
-		display: inline-block;
+		display: block;
 		padding: 10px 25px;
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 	}
 } 
 
@@ -56,3 +56,38 @@ nav {
 		float: left;
 	}
 }
+
+/* RETURN NAV ON CONTACT AND PRODUCTS PAGE */
+.banner {
+	margin-bottom: 40px;
+}
+.banner h2 {
+	float: right;
+	padding: 45px
+}
+.return {
+	float: left;
+	margin-top: 60px;
+
+	ul {
+		color: $grey;
+		font-size: 1rem;
+	}
+	li {
+		display: inline-block;
+	}
+
+	li:first-child a {
+		margin-right: 5px;
+	}
+
+	li:last-child a {
+		margin-left: 5px;
+	}
+
+	a {
+		padding: 0;
+		text-transform: capitalize;
+	}
+}
+

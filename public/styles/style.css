@@ -139,6 +139,21 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .hide {
   display: none; }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+ul,
+li {
+  padding: 0;
+  margin: 0; }
+
 /* GENERAL TYPOGRAPHY */
 html {
   font-size: 62.5%; }
@@ -182,11 +197,17 @@ li {
   margin: 0;
   list-style: none; }
 
+/* REPEATING BANNER: CONTACT AND PRODUCTS PAGE */
+.banner {
+  background-color: #F6F6F6; }
+  .banner h2 {
+    font-size: 1.8rem; }
+
 /* GENERAL NAVIGATION STYLES */
 nav a {
-  display: inline-block;
+  display: block;
   padding: 10px 25px;
-  font-size: 1.1rem; }
+  font-size: 1.2rem; }
 
 /* TOP NAV: USER ACTION NAVIGATION */
 .user-action {
@@ -223,6 +244,30 @@ nav a {
   .main-nav-links li {
     float: left; }
 
+/* RETURN NAV ON CONTACT AND PRODUCTS PAGE */
+.banner {
+  margin-bottom: 40px; }
+
+.banner h2 {
+  float: right;
+  padding: 45px; }
+
+.return {
+  float: left;
+  margin-top: 60px; }
+  .return ul {
+    color: #A1A1A1;
+    font-size: 1rem; }
+  .return li {
+    display: inline-block; }
+  .return li:first-child a {
+    margin-right: 5px; }
+  .return li:last-child a {
+    margin-left: 5px; }
+  .return a {
+    padding: 0;
+    text-transform: capitalize; }
+
 header {
   padding: 250px 0;
   background-image: url(../images/mainLP-hero.jpg);
@@ -231,8 +276,263 @@ header {
   text-align: center; }
   header p {
     color: #46454A;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
     line-height: 2.3;
     width: 350px;
     margin: 20px auto 0; }
+
+/* FEATURED COLLECTION SECTION STARTS*/
+.featured-collections {
+  padding-top: 10px; }
+
+.collection {
+  margin-top: 20px;
+  position: relative; }
+
+.visual-collection {
+  width: 75%;
+  position: relative;
+  float: left; }
+
+.visual-collection:nth-child(even) {
+  float: right; }
+
+/* collection labels stylings*/
+.collection-tab {
+  width: calc(25% - 20px);
+  margin-left: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  float: left;
+  height: 100%;
+  text-align: center; }
+  .collection-tab img {
+    margin-top: 80%; }
+  .collection-tab p {
+    color: #ffffff;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+
+.collection-tab:nth-child(odd) {
+  left: 0;
+  margin-left: 0;
+  margin-right: 20px; }
+
+.chair-tab {
+  background-color: #C9DB98; }
+
+.lamp-tab {
+  background-color: #F2DC7E; }
+
+.cup-tab {
+  background-color: #ABC8ED; }
+
+.clock-tab {
+  background-color: #E68B56; }
+
+.plate-tab {
+  background-color: #C0E5D2; }
+
+/* overlay stylings*/
+.overlay-collection {
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out; }
+  .overlay-collection h4 {
+    margin-top: 27%;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: capitalize; }
+
+.visual-collection:hover .overlay-collection {
+  opacity: 1;
+  visibility: visible; }
+
+.btn-view {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  position: relative;
+  color: #333333; }
+  .btn-view:before, .btn-view:after {
+    content: '';
+    height: 2px;
+    width: 20px;
+    background-color: #333333;
+    position: absolute;
+    margin-top: 7px; }
+  .btn-view:before {
+    left: -10px; }
+  .btn-view:after {
+    right: -10px; }
+
+/*PARTNERS AND CLIENTS SECTION STYLES*/
+.partner-client {
+  padding: 70px 0; }
+  .partner-client img {
+    width: 9%;
+    margin-right: 8%; }
+  .partner-client img:last-child {
+    margin-right: 0; }
+
+/* SHIPPING AND RETURN SECTION STARTS*/
+.shipping-return {
+  padding: 50px 0;
+  background-color: #F6F6F6; }
+  .shipping-return h2 {
+    padding: 30px;
+    float: left;
+    width: calc(50% - 10px);
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px #E7E7E6;
+    text-align: center; }
+  .shipping-return h2:first-child {
+    margin-right: 10px; }
+  .shipping-return h2:last-child {
+    margin-left: 10px; }
+
+/* CONTACT STYLES */
+.contact {
+  margin-bottom: 80px; }
+  .contact img {
+    margin-bottom: 80px; }
+
+.contact-info {
+  float: left;
+  width: 25%;
+  margin-top: 18px;
+  padding: 39px 30px;
+  background-color: #F6F6F6;
+  font-size: 1.2rem; }
+
+.contact-form {
+  float: left;
+  width: 75%; }
+  .contact-form h3 {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    letter-spacing: 3px; }
+  .contact-form input {
+    border: none;
+    border-bottom: 1px solid #F6F6F6;
+    margin: 15px 10px; }
+  .contact-form input[name="website"] {
+    margin: 0 0 0 20px; }
+  .contact-form input[name="name"],
+  .contact-form input[name="email"],
+  .contact-form input[name="website"] {
+    display: block;
+    width: calc(33.3% - 20px);
+    float: left; }
+  .contact-form input[type="submit"] {
+    max-width: 150px;
+    padding: 8px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-size: 1.4rem;
+    border: 2px solid #333333; }
+
+ul.social-links-contact {
+  margin: 0; }
+
+.social-links-contact {
+  padding: 20px 0; }
+  .social-links-contact li {
+    display: inline-block; }
+  .social-links-contact a {
+    padding: 20px 20px 20px 0; }
+
+/* FOOTER STYLES */
+.footer-nav {
+  padding: 55px 0; }
+
+.footer-nav-links {
+  float: left;
+  width: 25%;
+  text-align: left; }
+  .footer-nav-links a {
+    padding: 10px 0;
+    text-transform: capitalize; }
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.7rem; }
+
+.follow-delphinus {
+  clear: both;
+  background-color: #F6F6F6;
+  padding: 30px 0; }
+
+.social-links {
+  width: 33.3%;
+  margin-top: 10px;
+  display: inline-block;
+  margin: 10px auto 0; }
+
+.social-links li {
+  float: left; }
+
+.social-links a {
+  padding: 10px; }
+
+.main-copyright {
+  padding: 20px 0;
+  font-size: 1.4rem;
+  text-align: center; }
+
+/* form/newsletter styles */
+.newsletters {
+  width: 66.6%;
+  float: right; }
+
+.user-email {
+  float: right;
+  width: 70%;
+  position: relative; }
+
+.fa-long-arrow-right {
+  position: absolute;
+  right: 10px;
+  top: 25%;
+  color: #A1A1A1; }
+
+input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #A1A1A1;
+  padding: 10px; }
+
+::-webkit-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem; }
+
+:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem; }
+
+label {
+  float: left;
+  margin-top: 8px;
+  font-family: "Roboto Slab", serif;
+  font-weight: bolder;
+  text-transform: uppercase; }

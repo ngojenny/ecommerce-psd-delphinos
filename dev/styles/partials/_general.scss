@@ -10,6 +10,24 @@
 	display: none;
 }
 
+.overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul,
+li {
+	padding: 0;
+	margin: 0;
+}
+
 /* GENERAL TYPOGRAPHY */
 html {
 	font-size: 62.5%;
@@ -60,4 +78,12 @@ li {
 	padding: 0;
 	margin: 0;
 	list-style: none;
+}
+
+/* REPEATING BANNER: CONTACT AND PRODUCTS PAGE */
+.banner {
+	background-color: $lightGrey;
+	h2 {
+		font-size: 1.8rem;
+	}
 }

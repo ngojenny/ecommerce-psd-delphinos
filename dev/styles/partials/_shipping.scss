@@ -1,0 +1,22 @@
+/* SHIPPING AND RETURN SECTION STARTS*/
+.shipping-return {
+	padding: 50px 0;
+	background-color: $lightGrey;
+	h2 {
+		padding: 30px;
+		float: left;
+		width: calc(50% - 10px);
+		font-size: 2rem;
+		letter-spacing: 2px;
+		font-weight: bolder;
+		background-color: #ffffff;
+		box-shadow: 0px 0px 8px #E7E7E6;
+		text-align: center;
+	}
+	h2:first-child {
+		margin-right: 10px;
+	}
+	h2:last-child {
+		margin-left: 10px;
+	}
+}
