@@ -39,6 +39,27 @@ h3 {
 	padding: 10px;
 }
 
+.social-links-contact,
+.social-links-products {
+	display: block;
+	width: 100%;
+	text-align: center;
+	li {
+		float: none;
+		display: inline-block;
+	}
+}
+
+.social-links-contact {
+	padding: 20px 0;
+	li {
+		display: inline-block;
+	}
+	a {
+		padding: 20px 20px 20px 0;
+	}
+}
+
 .main-copyright {
 	padding: 20px 0;
 	font-size: 1.4rem;
@@ -94,11 +115,14 @@ input {
 }
 
 label {
-	float: left;
 	margin-top: 8px;
 	font-family: $headingFont;
 	font-weight: bolder;
 	text-transform: uppercase;
+}
+
+label[for="email"] {
+	float: left;
 }
 
 

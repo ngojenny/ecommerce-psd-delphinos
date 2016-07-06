@@ -1,0 +1,123 @@
+/* PRODUCT PAGE STYLES */
+.main-products {
+	width: 75%;
+	float: left;
+}
+
+/*side navigation */
+.shop-nav {
+	width: calc(25% - 20px);
+	float: left;
+	margin-right: 20px;
+}
+
+.shop-style-links ul {
+	color: $darkGrey;
+	font-family: $bodyFont;
+	font-size: 1.3rem;
+	border-bottom: 1px solid $lightGrey;
+}
+
+.shop-style-links li {
+	margin-bottom: 15px;
+}
+
+.shop-style-links li:last-child {
+	margin-bottom: 25px;
+}
+
+input[type="range"] {
+	width: 50%;
+}
+
+/*filter bar*/
+.filter-products {
+	float: left;
+	width: 40%;
+}
+
+.filter-products p {
+	font-size: 1.3rem;
+}
+
+.filter-products p:first-child {
+	float: left;
+}
+
+.filter-products p:last-child {
+	float: right;
+}
+
+.products-view {
+	width: 32%;
+	float: right;
+	text-align: right;
+	i {
+		margin: 0 7px;
+	}
+}
+
+.products-view p {
+	float: left;
+	font-size: 1.3rem;
+}
+
+.products-view p:last-child {
+	margin-left: 20px;
+}
+
+/* products area */
+.all-products {
+	clear: both;
+	padding: 20px 0;
+	border-top: 1px solid $lightGrey;
+	border-bottom: 1px solid $lightGrey;
+}
+
+.product {
+	width: calc(50% - 20px);
+	margin: 10px;
+	float: left;
+	figcaption {
+		text-align: center;
+	}
+}
+
+.product-name {
+	color: $black;
+	font-family: $headingFont;
+	font-weight: bolder;
+	font-size: 1.5rem;
+}
+
+.price {
+	font-size: 1.3rem;
+	margin: 5px 0;
+}
+
+label[for="price-range"] {
+	display: block;
+	color: $darkGrey;
+	font-family: $bodyFont;
+	font-size: 1.3rem;
+}
+
+.product-pages {
+	margin: 50px auto;
+	width: 250px;
+}
+
+.product-pages li {
+	float: left;
+	padding: 5px 20px;
+	font-family: $bodyFont;
+	color: $grey;
+	border: 1px solid transparent;
+	&:hover {
+		border: 1px solid $lightGrey;
+	}
+}
+
+.product-pages .active {
+	border: 1px solid $lightGrey;
+}

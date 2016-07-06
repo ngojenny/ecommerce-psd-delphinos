@@ -400,6 +400,106 @@ header {
   .shipping-return h2:last-child {
     margin-left: 10px; }
 
+/* PRODUCT PAGE STYLES */
+.main-products {
+  width: 75%;
+  float: left; }
+
+/*side navigation */
+.shop-nav {
+  width: calc(25% - 20px);
+  float: left;
+  margin-right: 20px; }
+
+.shop-style-links ul {
+  color: #747474;
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #F6F6F6; }
+
+.shop-style-links li {
+  margin-bottom: 15px; }
+
+.shop-style-links li:last-child {
+  margin-bottom: 25px; }
+
+input[type="range"] {
+  width: 50%; }
+
+/*filter bar*/
+.filter-products {
+  float: left;
+  width: 40%; }
+
+.filter-products p {
+  font-size: 1.3rem; }
+
+.filter-products p:first-child {
+  float: left; }
+
+.filter-products p:last-child {
+  float: right; }
+
+.products-view {
+  width: 32%;
+  float: right;
+  text-align: right; }
+  .products-view i {
+    margin: 0 7px; }
+
+.products-view p {
+  float: left;
+  font-size: 1.3rem; }
+
+.products-view p:last-child {
+  margin-left: 20px; }
+
+/* products area */
+.all-products {
+  clear: both;
+  padding: 20px 0;
+  border-top: 1px solid #F6F6F6;
+  border-bottom: 1px solid #F6F6F6; }
+
+.product {
+  width: calc(50% - 20px);
+  margin: 10px;
+  float: left; }
+  .product figcaption {
+    text-align: center; }
+
+.product-name {
+  color: #333333;
+  font-family: "Roboto Slab", serif;
+  font-weight: bolder;
+  font-size: 1.5rem; }
+
+.price {
+  font-size: 1.3rem;
+  margin: 5px 0; }
+
+label[for="price-range"] {
+  display: block;
+  color: #747474;
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem; }
+
+.product-pages {
+  margin: 50px auto;
+  width: 250px; }
+
+.product-pages li {
+  float: left;
+  padding: 5px 20px;
+  font-family: "Lato", sans-serif;
+  color: #A1A1A1;
+  border: 1px solid transparent; }
+  .product-pages li:hover {
+    border: 1px solid #F6F6F6; }
+
+.product-pages .active {
+  border: 1px solid #F6F6F6; }
+
 /* CONTACT STYLES */
 .contact {
   margin-bottom: 80px; }
@@ -426,7 +526,7 @@ header {
     border-bottom: 1px solid #F6F6F6;
     margin: 15px 10px; }
   .contact-form input[name="website"] {
-    margin: 0 0 0 20px; }
+    margin: 15px 0 15px 20px; }
   .contact-form input[name="name"],
   .contact-form input[name="email"],
   .contact-form input[name="website"] {
@@ -436,21 +536,11 @@ header {
   .contact-form input[type="submit"] {
     max-width: 150px;
     padding: 8px;
-    margin-top: 30px;
+    margin-top: 20px;
     text-transform: uppercase;
     font-family: "Lato", sans-serif;
     font-size: 1.4rem;
     border: 2px solid #333333; }
-
-ul.social-links-contact {
-  margin: 0; }
-
-.social-links-contact {
-  padding: 20px 0; }
-  .social-links-contact li {
-    display: inline-block; }
-  .social-links-contact a {
-    padding: 20px 20px 20px 0; }
 
 /* FOOTER STYLES */
 .footer-nav {
@@ -484,6 +574,23 @@ h3 {
 
 .social-links a {
   padding: 10px; }
+
+.social-links-contact,
+.social-links-products {
+  display: block;
+  width: 100%;
+  text-align: center; }
+  .social-links-contact li,
+  .social-links-products li {
+    float: none;
+    display: inline-block; }
+
+.social-links-contact {
+  padding: 20px 0; }
+  .social-links-contact li {
+    display: inline-block; }
+  .social-links-contact a {
+    padding: 20px 20px 20px 0; }
 
 .main-copyright {
   padding: 20px 0;
@@ -531,8 +638,10 @@ input {
   font-size: 1.3rem; }
 
 label {
-  float: left;
   margin-top: 8px;
   font-family: "Roboto Slab", serif;
   font-weight: bolder;
   text-transform: uppercase; }
+
+label[for="email"] {
+  float: left; }

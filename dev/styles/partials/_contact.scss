@@ -32,7 +32,7 @@
 	}
 
 	input[name="website"] {
-		margin: 0 0 0 20px;
+		margin: 15px 0 15px 20px;
 	}
 
 	input[name="name"],
@@ -46,24 +46,10 @@
 	input[type="submit"] {
 		max-width: 150px;
 		padding: 8px;
-		margin-top: 30px;
+		margin-top: 20px;
 		text-transform: uppercase;
 		font-family: $bodyFont;
 		font-size: 1.4rem;
 		border: 2px solid $black;
-	}
-}
-
-ul.social-links-contact {
-	margin: 0;
-}
-
-.social-links-contact {
-	padding: 20px 0;
-	li {
-		display: inline-block;
-	}
-	a {
-		padding: 20px 20px 20px 0;
 	}
 }
