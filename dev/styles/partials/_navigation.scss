@@ -5,15 +5,15 @@ nav {
 		padding: 10px 25px;
 		font-size: 1.2rem;
 	}
+	.fa.fa-bars {
+		display: none;
+		padding: 10px;
+		float: right;
+		font-size: 1.7rem;
+		cursor: pointer;
+	}
 } 
 
-.fa.fa-bars {
-	display: none;
-	padding: 10px;
-	float: right;
-	font-size: 1.7rem;
-	cursor: pointer;
-}
 
 .fa.fa-times {
 	display: none;

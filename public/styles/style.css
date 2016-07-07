@@ -209,7 +209,7 @@ nav a {
   padding: 10px 25px;
   font-size: 1.2rem; }
 
-.fa.fa-bars {
+nav .fa.fa-bars {
   display: none;
   padding: 10px;
   float: right;
@@ -455,14 +455,14 @@ input[type="range"] {
   float: right; }
 
 .products-view {
-  width: 32%;
+  width: 50%;
   float: right;
   text-align: right; }
   .products-view i {
     margin: 0 7px; }
 
 .products-view p {
-  float: left;
+  float: right;
   font-size: 1.3rem; }
 
 .products-view p:last-child {
@@ -660,12 +660,20 @@ label {
 label[for="email"] {
   float: left; }
 
+@media (max-width: 1110px) {
+  /* PRODUCTS PAGE */
+  .filter-products {
+    width: 50%; } }
+
 @media (max-width: 970px) {
   /* COLLECTIONS CHANGES*/
   .featured-collections {
     font-size: 85%; }
   .collection-tab img {
     width: 33.33%; }
+  /* PRODUCTS PAGE */
+  .filter-products p:last-child {
+    float: left; }
   /* FOOTER CHANGES */
   footer .social-links {
     width: 30%; }
@@ -768,6 +776,17 @@ label[for="email"] {
     margin: 20px; }
   .partner-client img:last-child {
     margin-right: 20px; }
+  /* PRODUCTS PAGE CHANGES */
+  .main-products {
+    width: 70%; }
+  .shop-nav {
+    font-size: 90%;
+    width: calc(30% - 20px); }
+  .product {
+    width: calc(100% - 20px);
+    margin: 10px; }
+  input[type="range"] {
+    width: 100%; }
   /* FOOTER STYLE CHANGES */
   .footer-nav-links {
     width: 50%; }
@@ -785,7 +804,7 @@ label[for="email"] {
     float: left;
     width: 30%;
     margin: 20px auto; }
-  .fa.fa-bars {
+  nav .fa.fa-bars {
     display: block;
     margin-top: 5px; }
   .main-nav-links {
@@ -820,11 +839,23 @@ label[for="email"] {
   .show-responsive-nav {
     opacity: 1;
     visibility: visible; }
+  .return {
+    display: none; }
+  /* PRODUCTS STYLE CHANGES */
+  .shop-nav {
+    display: none; }
+  .main-products {
+    width: 100%; }
   /* SHIPPING STYLE CHANGES*/
   .shipping-return h2 {
     padding: 25px 20px; } }
 
 @media (max-width: 420px) {
+  /* NAVIGATION STYLE CHANGES */
+  .banner {
+    text-align: center; }
+    .banner h2 {
+      float: none; }
   /* PARTNER STYLE CHANGES */
   .partner-client {
     padding: 25px 0; }
@@ -835,11 +866,16 @@ label[for="email"] {
     font-size: 1.5rem; } }
 
 @media (max-width: 320px) {
+  /* GENERAL STYLE CHANGES */
+  .wrapper {
+    width: 75%; }
   /* NAVIGATION STYLE CHANGES */
   .main-nav img {
     width: 40%; }
   .user-account-action a {
     font-size: 1.1rem; }
+  .banner h2 {
+    padding: 45px 20px; }
   /* SHIPPING STYLE CHANGES*/
   .shipping-return h2 {
     font-size: 1.2rem;

@@ -1,5 +1,5 @@
 $(function() {
-    $('.fa-bars').on('click', function(){
+    $('nav .fa-bars').on('click', function(){
     	$('.main-nav-links').addClass('show-responsive-nav');
     });
 
