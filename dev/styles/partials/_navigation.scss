@@ -7,6 +7,21 @@ nav {
 	}
 } 
 
+.fa.fa-bars {
+	display: none;
+	padding: 10px;
+	float: right;
+	font-size: 1.7rem;
+	cursor: pointer;
+}
+
+.fa.fa-times {
+	display: none;
+	padding: 10px;
+	font-size: 1.8rem;
+	cursor: pointer;
+}
+
 /* TOP NAV: USER ACTION NAVIGATION */
 
 .user-action {
