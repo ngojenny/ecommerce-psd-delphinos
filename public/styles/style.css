@@ -663,7 +663,12 @@ label[for="email"] {
 @media (max-width: 1110px) {
   /* PRODUCTS PAGE */
   .filter-products {
-    width: 50%; } }
+    width: 50%; }
+  /* CONTACT PAGE */
+  .social-links-contact {
+    display: none; }
+  .contact-info {
+    padding: 50px 25px; } }
 
 @media (max-width: 970px) {
   /* COLLECTIONS CHANGES*/
@@ -671,6 +676,19 @@ label[for="email"] {
     font-size: 85%; }
   .collection-tab img {
     width: 33.33%; }
+  /* CONTACT PAGE */
+  .contact-form input[name="name"] {
+    width: calc(50% - 20px);
+    margin: 15px 10px 15px 10px; }
+  .contact-form input[name="email"] {
+    width: calc(50% - 10px);
+    margin: 15px 0 15px 10px; }
+  .contact-form input[name="website"] {
+    float: none;
+    width: 100%;
+    margin: 15px 10px; }
+  .contact-info {
+    padding: 75px 25px; }
   /* PRODUCTS PAGE */
   .filter-products p:last-child {
     float: left; }
@@ -704,6 +722,16 @@ label[for="email"] {
   .main-nav-links {
     width: 100%;
     text-align: center; }
+  /* CONTACT PAGE */
+  .contact-form {
+    width: 65%; }
+    .contact-form input[name="name"],
+    .contact-form input[name="email"] {
+      width: 100%;
+      margin: 15px 10px; }
+  .contact-info {
+    width: 35%;
+    padding: 130px 25px; }
   /*FOOTER STYLE CHANGES*/
   footer {
     text-align: center; }
@@ -787,6 +815,15 @@ label[for="email"] {
     margin: 10px; }
   input[type="range"] {
     width: 100%; }
+  /* CONTACT PAGE CHANGES */
+  .contact-info,
+  .contact-form {
+    width: 100%; }
+  .contact-info {
+    padding: 25px;
+    text-align: center; }
+  .social-links-contact {
+    display: block; }
   /* FOOTER STYLE CHANGES */
   .footer-nav-links {
     width: 50%; }
@@ -856,6 +893,8 @@ label[for="email"] {
     text-align: center; }
     .banner h2 {
       float: none; }
+  .banner {
+    padding: 10px 0; }
   /* PARTNER STYLE CHANGES */
   .partner-client {
     padding: 25px 0; }
