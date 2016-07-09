@@ -151,8 +151,13 @@
 
 @media (max-width: 630px) {
 	/*HEADER STYLE CHANGES*/ 
-	header {
-		padding: 140px 0;
+	.slide {
+		padding: 160px 0;
+		height: 450px;
+
+		h1 {
+			font-size: 2.1rem;
+		}
 	}
 
 	/* NAVIGATION STYLE CHANGES */
@@ -270,9 +275,9 @@
 
 @media (max-width: 530px) {
 	/* HEADER STYLE CHANGES */
-	header {
+	.slide {
 		h1 {
-			font-size: 2.4rem;
+			font-size: 2rem;
 		}
 		p {
 			width: 80%;

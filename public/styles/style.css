@@ -281,20 +281,44 @@ nav .fa.fa-bars {
     padding: 0;
     text-transform: capitalize; }
 
-header {
-  padding: 250px 0;
-  background-image: url(../images/mainLP-hero.jpg);
+/* HEADER STYLES */
+.main-slider {
+  margin-bottom: 25px; }
+
+.slide {
+  width: 100%;
+  padding: 220px 0;
+  height: 550px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center; }
-  header p {
+  .slide p {
     color: #46454A;
     font-size: 1.3rem;
     letter-spacing: 1px;
     line-height: 2.3;
     width: 350px;
     margin: 20px auto 0; }
+
+.slide1 {
+  background-image: url(../images/mainLP-hero.jpg); }
+
+.slide2 {
+  background-image: url(../images/tablewhite.jpeg); }
+
+.slide3 {
+  background-image: url(../images/livingroom.jpg); }
+  .slide3 h1 {
+    color: whitesmoke; }
+  .slide3 a {
+    background-color: rgba(58, 102, 127, 0.6);
+    color: whitesmoke;
+    padding: 10px;
+    transition: background-color 0.3s; }
+    .slide3 a:hover {
+      background-color: rgba(58, 102, 127, 0.8);
+      font-weight: 400; }
 
 /* FEATURED COLLECTION SECTION STARTS*/
 .featured-collections {
@@ -758,8 +782,11 @@ label[for="email"] {
 
 @media (max-width: 630px) {
   /*HEADER STYLE CHANGES*/
-  header {
-    padding: 140px 0; }
+  .slide {
+    padding: 160px 0;
+    height: 450px; }
+    .slide h1 {
+      font-size: 2.1rem; }
   /* NAVIGATION STYLE CHANGES */
   .user-action a {
     padding: 10px; }
@@ -832,9 +859,9 @@ label[for="email"] {
 
 @media (max-width: 530px) {
   /* HEADER STYLE CHANGES */
-  header h1 {
-    font-size: 2.4rem; }
-  header p {
+  .slide h1 {
+    font-size: 2rem; }
+  .slide p {
     width: 80%; }
   /* NAVIGATION STYLE CHANGES */
   .main-nav img {
