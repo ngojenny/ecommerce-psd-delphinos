@@ -787,6 +787,11 @@ label[for="email"] {
     height: 450px; }
     .slide h1 {
       font-size: 2.1rem; }
+  /*flickity overwrite*/
+  .flickity-prev-next-button {
+    top: 90%;
+    width: 30px;
+    height: 30px; }
   /* NAVIGATION STYLE CHANGES */
   .user-action a {
     padding: 10px; }
