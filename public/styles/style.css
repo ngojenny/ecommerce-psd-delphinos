@@ -448,6 +448,11 @@ nav .fa.fa-bars {
   width: calc(25% - 20px);
   float: left;
   margin-right: 20px; }
+  .shop-nav li {
+    cursor: pointer; }
+
+.filter-out {
+  display: none; }
 
 .shop-style-links ul {
   color: #747474;

@@ -9,6 +9,14 @@
 	width: calc(25% - 20px);
 	float: left;
 	margin-right: 20px;
+
+	li {
+		cursor: pointer;
+	}
+}
+
+.filter-out {
+	display: none;
 }
 
 .shop-style-links ul {
