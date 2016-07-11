@@ -300,6 +300,10 @@ nav .fa.fa-bars {
     line-height: 2.3;
     width: 350px;
     margin: 20px auto 0; }
+  .slide a {
+    font-size: 1.3rem; }
+  .slide h1 {
+    margin-bottom: 40px; }
 
 .slide1 {
   background-image: url(../images/mainLP-hero.jpg); }
